@@ -168,7 +168,6 @@ html {
 				<li><a href="aboutus.jsp">About Us</a></li>
 				<li><a href="contactus.jsp">Contact Us</a></li>
 			</ul>
-
 			Copyright © 2021 <a href="#">Pradeep Kumar Jaiswal</a> |
 		</div>
 
