@@ -121,8 +121,8 @@
 						Posted by <a href="#">Admin</a> on <span>Jan 5, 2021</span>
 					</p>
 				</div>
-
 			</div>
+
 			<div class="sidebar_box_bottom"></div>
 
 			<div class="sidebar_box">
@@ -184,10 +184,9 @@
 
 							//}
 						%>
-					</table>
-					<%
-						
-					%> <%-- </table>--%> <%@ page import="java.sql.*"%>
+					</table> <%
+ 	
+ %> <%-- </table>--%> <%@ page import="java.sql.*"%>
 					<%@ page import="java.io.*"%> <%@ page
 						import="javax.servlet.*"%> <%@ page
 						import="com.uiet.servlet.*"%> <%--</table>--%>
@@ -200,7 +199,6 @@
 					</form>
 
 				</td>
-
 
 				<div class="cleaner"></div>
 			</div>
