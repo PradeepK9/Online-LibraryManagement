@@ -30,7 +30,7 @@ public class MyListener implements ServletContextListener{
        else if(status==2) 
 		
                {System.out.println("else if part table does not exist new table has created"+status);
-		PreparedStatement ps3=con.prepareStatement("CREATE SEQUENCE javatpoint MINVALUE 1 MAXVALUE 999999999999 INCREMENT BY 1 START WITH 1 NOCACHE  NOORDER  NOCYCLE");
+		PreparedStatement ps3=con.prepareStatement("CREATE SEQUENCE LIB_SEQ MINVALUE 1 MAXVALUE 999999999999 INCREMENT BY 1 START WITH 1 NOCACHE  NOORDER  NOCYCLE");
 		ps3.executeUpdate();
 		
 		PreparedStatement ps=con.prepareStatement("CREATE TABLE  NEWMEMBER(ID NUMBER,USERNAME VARCHAR2(4000),PASSWORD VARCHAR2(4000),REPASSWORD VARCHAR2(4000),PHONE NUMBER, ADDERESS VARCHAR2(4000),SYD VARCHAR2(4000),PRIMARY KEY (ID))");
