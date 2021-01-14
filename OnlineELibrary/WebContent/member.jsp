@@ -6,87 +6,85 @@
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
-function ctck()
-{
-var sds = document.getElementById("dum");
-if(sds == null){alert("You are using a free package.\n You are not allowed to remove the tag.\n");}
-}
+	function ctck() {
+		var sds = document.getElementById("dum");
+		if (sds == null) {
+			alert("You are using a free package.\n You are not allowed to remove the tag.\n");
+		}
+	}
 </script>
 
 <SCRIPT LANGUAGE="JavaScript">
-function dil(form)
-{
-   for(var i=0; i<form.elements.length; i++)
-   {
-		if(form.elements[i].value == "")
-		{
-		   alert("Fill out all Fields")
-		   document.F1.username.focus()
-		   return false
+	function dil(form) {
+		for (var i = 0; i < form.elements.length; i++) {
+			if (form.elements[i].value == "") {
+				alert("Fill out all Fields")
+				document.F1.username.focus()
+				return false
+			}
 		}
-   }
 
-  
-   if(!isNaN(document.F1.username.value))
-   {
-       alert("User Name  must  be  char's & can't be null")
-	   document.F1.username.value=""
-	   document.F1.username.focus()
-	   return false
-   }
+		if (!isNaN(document.F1.username.value)) {
+			alert("User Name  must  be  char's & can't be null")
+			document.F1.username.value = ""
+			document.F1.username.focus()
+			return false
+		}
 
-   if(!isNaN(document.F1.password.value))
-   {
-       alert("Password  must  be  char's & can't be null")
-	   document.F1.password.value=""
-	   document.F1.password.focus()
-	   return false
-   }
-   
-   return true   
-}
+		if (!isNaN(document.F1.password.value)) {
+			alert("Password  must  be  char's & can't be null")
+			document.F1.password.value = ""
+			document.F1.password.focus()
+			return false
+		}
+
+		return true
+	}
 </SCRIPT>
 
 </head>
 <body>
-<div id="templatemo_header_wrapper">
-    <div id="templatemo_header">
-    	<div id="site_title">
-              <h1>
-                <span>Online Library Management</span>
-            </a></h1>
-        </div>
-      <p>Library management is a web application which manages and
+	<div id="templatemo_header_wrapper">
+		<div id="templatemo_header">
+			<div id="site_title">
+				<h1>
+					<span>Online Library Management</span> </a>
+				</h1>
+			</div>
+			<p>Library management is a web application which manages and
 				stores books information electronically according to students needs.</p>
-    
-    </div> <!-- end of templatemo_header -->
 
-</div> <!-- end of templatemo_menu_wrapper -->
+		</div>
+		<!-- end of templatemo_header -->
 
-<div id="templatemo_menu_wrapper">
-    <div id="templatemo_menu">
-        
-        <ul>
-       <li><a href="index.html">Home</a></li>
-                    <li><a href="admin.jsp">Adminstrator</a></li>
-                    <li><a href="member.jsp">Library Member</a></li>
-                    <li><a href="bookdetailsforbookdetails.jsp">Book Details</a></li>
-                     <li><a href="aboutus.jsp">About Us</a></li>
-                    <li><a href="contactus.jsp">Contact Us</a></li>
-                </ul>    	
-    
-    </div> <!-- end of templatemo_menu -->
-</div>
+	</div>
+	<!-- end of templatemo_menu_wrapper -->
 
-<div id="templatemo_content_wrapper">
+	<div id="templatemo_menu_wrapper">
+		<div id="templatemo_menu">
 
-	<div id="templatemo_sidebar">
-    
-    	<div class="sidebar_box">
-        	
-            <h2>Announcements</h2>
-            
-            <div class="news_box">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="admin.jsp">Adminstrator</a></li>
+				<li><a href="member.jsp">Library Member</a></li>
+				<li><a href="bookdetailsforbookdetails.jsp">Book Details</a></li>
+				<li><a href="aboutus.jsp">About Us</a></li>
+				<li><a href="contactus.jsp">Contact Us</a></li>
+			</ul>
+
+		</div>
+		<!-- end of templatemo_menu -->
+	</div>
+
+	<div id="templatemo_content_wrapper">
+
+		<div id="templatemo_sidebar">
+
+			<div class="sidebar_box">
+
+				<h2>Announcements</h2>
+
+				<div class="news_box">
 					<a href="#">A college library management is a project that
 						manages and stores books information electronically according to
 						students needs.</a>
@@ -117,70 +115,81 @@ function dil(form)
 						Posted by <a href="#">Admin</a> on <span>Jan 5, 2021</span>
 					</p>
 				</div>
-        
-        </div><div class="sidebar_box_bottom"></div>
-        
-        <div class="sidebar_box">
-		
-            <div class="cleaner"></div>
-        
-        </div><div class="sidebar_box_bottom"></div>
-    
-    </div> <!-- end of sidebar -->
-    
-     <div id="templatemo_content">
-    
-    	<div class="content_box">
-    
-    	<td valign="top">
-    	
-   		   
-				  <%  out.print("<font color=blue>WELCOME TO MEMBER LOGIN");
-	%>
-    
-    	<form name=F1 onSubmit="return dil(this)" action="memberlogin.jsp" >
-				   <table cellspacing="10" cellpadding="8">	
-				  <%if(request.getAttribute("check")!=null)
-			{
-			out.print("<div>");
-			out.print("<font color='blue'><font size='4'>"+request.getAttribute("check")+"");
-			
-			out.print("</div>"); 
-			}
-			
-			 %>
-	
-	    			<tr><td>LOGIN NAME:</td><td> <input type="text" name="username"/></td></tr>
-					
-					<tr><td>PASSWORD:</td><td> <input type="password" name="password"/></td></tr>
-					
-					<tr><td></td><td><input type="submit" value="Submit"/>
-					
-                   
-                   <INPUT TYPE=RESET VALUE="CLEAR"></td></tr>
-                   
-                   
-                           <tr><td><a href="Register.jsp">New User</a></td></tr>
-          
-             	</table>
-            
-            <div class="section_w250 float_l">
-					<h3>Admin login:</h3>
+
+			</div>
+			<div class="sidebar_box_bottom"></div>
+
+			<div class="sidebar_box">
+
+				<div class="cleaner"></div>
+
+			</div>
+			<div class="sidebar_box_bottom"></div>
+
+		</div>
+		<!-- end of sidebar -->
+
+		<div id="templatemo_content">
+
+			<div class="content_box">
+
+				<td valign="top">
+					<%
+						out.print("<font color=blue>WELCOME TO MEMBER LOGIN");
+					%>
+
+					<form name=F1 onSubmit="return dil(this)" action="memberlogin.jsp">
+						<table cellspacing="10" cellpadding="8">
+							<%
+								if (request.getAttribute("check") != null) {
+									out.print("<div>");
+									out.print("<font color='blue'><font size='4'>" + request.getAttribute("check") + "");
+
+									out.print("</div>");
+								}
+							%>
+
+							<tr>
+								<td>LOGIN NAME:</td>
+								<td><input type="text" name="username" /></td>
+							</tr>
+
+							<tr>
+								<td>PASSWORD:</td>
+								<td><input type="password" name="password" /></td>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td><input type="submit" value="Submit" /> <INPUT
+									TYPE=RESET VALUE="CLEAR"></td>
+							</tr>
+
+
+							<tr>
+								<td><a href="Register.jsp">New User</a></td>
+							</tr>
+
+						</table>
+
+						<div class="section_w250 float_l">
+							<h3>Admin login:</h3>
 							<p>Admin is the one who administers the system by adding or
 								removing e-books into and from the system respectively..</p>
-								
-								    </div>
-				</form>
-  		
-			</td>
-        	<div class="cleaner"></div>
-        </div><div class="content_box_bottom"></div>
-        
-        <div class="content_box">
-        
-        	<h2>Testimonial</h2>
-            
-         <div class="section_w250 float_l">
+
+						</div>
+					</form>
+
+				</td>
+				<div class="cleaner"></div>
+			</div>
+			<div class="content_box_bottom"></div>
+
+			<div class="content_box">
+
+				<h2>Testimonial</h2>
+
+				<div class="section_w250 float_l">
 					<h3>Advantage :</h3>
 					<p>The system excludes the use of paper work by managing all
 						the book information electronically.</p>
@@ -196,30 +205,35 @@ function dil(form)
 						not to go to library for issuing purpose.</p>
 
 				</div>
-        
-        	<div class="cleaner"></div>
-        </div><div class="content_box_bottom"></div>
-    
-    </div> <!-- end of content -->
-    
-    <div class="cleaner"></div>
 
-</div>
+				<div class="cleaner"></div>
+			</div>
+			<div class="content_box_bottom"></div>
 
-<div id="templatemo_footer_wrapper">
+		</div>
+		<!-- end of content -->
 
-    <div id="templatemo_footer">
-    
-        <ul class="footer_menu">
-                <li><a href="index.html">Home</a></li>
-                    <li><a href="admin.jsp">Adminstrator</a></li>
-                    <li><a href="member.jsp">Library Member</a></li>
-                    <li><a href="bookdetailsformember.jsp">Book Details</a></li>
-                     <li><a href="aboutus.jsp">About Us</a></li>
-                    <li><a href="contactus.jsp">Contact Us</a></li>
-            </ul>
-               Copyright © 2021 <a href="#">Pradeep Kumar Jaiswal</a> | </div>
-    
-</div>
-</div></body>
+		<div class="cleaner"></div>
+
+	</div>
+
+	<div id="templatemo_footer_wrapper">
+
+		<div id="templatemo_footer">
+
+			<ul class="footer_menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="admin.jsp">Adminstrator</a></li>
+				<li><a href="member.jsp">Library Member</a></li>
+				<li><a href="bookdetailsformember.jsp">Book Details</a></li>
+				<li><a href="aboutus.jsp">About Us</a></li>
+				<li><a href="contactus.jsp">Contact Us</a></li>
+			</ul>
+
+			Copyright © 2021 <a href="#">Pradeep Kumar Jaiswal</a> |
+		</div>
+
+	</div>
+	</div>
+</body>
 </html>
