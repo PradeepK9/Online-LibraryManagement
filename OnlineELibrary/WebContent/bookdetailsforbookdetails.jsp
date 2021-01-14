@@ -151,10 +151,9 @@
 								out.print("</div>");
 							}
 						%>
-					</table>
-					<%
-						
-					%>
+					</table> <%
+ 	
+ %>
 					<table height="380">
 						<%
 							try {
@@ -190,10 +189,9 @@
 												e.printStackTrace();
 											}
 						%>
-					</table>
-					<%
-						
-					%> <%@ page import="java.sql.*"%> <%@ page
+					</table> <%
+ 	
+ %> <%@ page import="java.sql.*"%> <%@ page
 						import="java.io.*"%> <%@ page
 						import="javax.servlet.*"%> <%@ page
 						import="com.uiet.servlet.*"%> <%--</table>--%>

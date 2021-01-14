@@ -121,7 +121,7 @@
 					</p>
 				</div>
 
-				<div class="sidebar_box_bottom"></div>
+				<!-- <div class="sidebar_box_bottom"></div> -->
 
 				<div class="sidebar_box">
 
@@ -210,9 +210,6 @@
 							import="javax.servlet.*"%> <%@ page
 							import="com.uiet.servlet.*"%>
 
-
-
-
 						</form>
 
 					</td>
@@ -268,9 +265,8 @@
 					<li><a href="contactus.jsp">Contact Us</a></li>
 				</ul>
 
-				Copyright © 2021 <a href="#">Pradeep Kumar Jaiswal</a> | 
+				Copyright © 2021 <a href="#">Pradeep Kumar Jaiswal</a> |
 			</div>
-
 		</div>
 </body>
 </html>
