@@ -142,10 +142,7 @@ function dil(form)
         </div><div class="sidebar_box_bottom"></div>
         
         <div class="sidebar_box">
-			
-           
-            
-            <div class="cleaner"></div>
+	     <div class="cleaner"></div>
         
         </div><div class="sidebar_box_bottom"></div>
     
