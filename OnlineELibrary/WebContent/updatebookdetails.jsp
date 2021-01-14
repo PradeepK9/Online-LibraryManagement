@@ -161,7 +161,7 @@
 						import="java.io.*"%> <%@ page
 						import="javax.servlet.*"%> <%@ page
 						import="com.uiet.servlet.*"%> <%--</table>--%>
-					<h3>Admin login:</h3>
+					<h3>Update Book</h3>
 					<p>Admin is the one who administers the system by adding or
 						removing e-books into and from the system respectively..</p>
 			</div>

@@ -176,7 +176,7 @@
 					<%@ page import="java.io.*"%> <%@ page
 						import="javax.servlet.*"%> <%@ page
 						import="com.uiet.servlet.*"%> <%--</table>--%>
-					<h2>JAVA</h2>
+					<h2>Update Book</h2>
 
 					<div class="section_w250 float_l">
 						<h3>Admin login:</h3>
