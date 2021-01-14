@@ -170,7 +170,6 @@ html {
 			</ul>
 			Copyright © 2021 <a href="#">Pradeep Kumar Jaiswal</a> |
 		</div>
-
 	</div>
 
 </body>
