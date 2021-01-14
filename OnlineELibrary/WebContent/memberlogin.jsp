@@ -159,8 +159,7 @@ function dil(form)
         String username=request.getParameter("username");
 		String password=request.getParameter("password");
 	    boolean status=verifyLogin1.checkLogin(username,password);
-		//if(status==true){
-		//	out.print("Welcome    " + username);
+
 		System.out.println(status);
 		
 		try {
@@ -169,8 +168,7 @@ function dil(form)
 		
 			out.println("<br><a href='bookdetailsformember.jsp'>Click to see  book details</a> " );
 		    out.println("<br><a href='issuenewbook.jsp'>Click to issue new book</a> " );
-		   
-		    
+		   	    
 			Connection con=GetCon.getCon();
 			PreparedStatement ps=con.prepareStatement("");
            			
@@ -190,9 +188,7 @@ function dil(form)
 			%></table><%
 %>
     	
-    	
-
-
+ 
 <%@ page import="java.sql.*"%>
 <%@ page import="java.io.*" %>
 <%@ page import="javax.servlet.*"%>
@@ -209,8 +205,7 @@ function dil(form)
 				</form>
   		
 			</td>
-	
-        
+      
         	<div class="cleaner"></div>
         </div><div class="content_box_bottom"></div>
         
