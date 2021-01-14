@@ -110,8 +110,9 @@ function dil(form)
 						Posted by <a href="#">Admin</a> on <span>Jan 5, 2021</span>
 					</p>
 				</div>
+        </div>
         
-        </div><div class="sidebar_box_bottom"></div>
+        <div class="sidebar_box_bottom"></div>
         
         <div class="sidebar_box">
             
@@ -156,15 +157,9 @@ function dil(form)
 <%@ page import="java.io.*" %>
 <%@ page import="javax.servlet.*"%>
 <%@ page import="com.uiet.servlet.*" %>
-  
-  	
-    	
-    	
-		
-             	
-          	<h3>Admin login:</h3>
-							<p>Admin is the one who administers the system by adding or
-								removing e-books into and from the system respectively..</p>
+      	
+          	<h3>Submit The Book ID</h3>
+							<p>After clicking on submit button your book will be booked if you enter correct book id.</p>
 								      </div>
           
 				</form>
