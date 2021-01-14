@@ -57,9 +57,6 @@ function dil(form)
 	   return false
    }
 	
-	
-	
-
     if(!isNaN(document.F1.syd.value))
    {
        alert("designation  must  be  char's & can't be null")
@@ -68,11 +65,7 @@ function dil(form)
 	   return false
    }
   
-   
-   
-   
-
-   return true   
+  return true   
    }
 </SCRIPT>
 
@@ -218,8 +211,6 @@ function dil(form)
 						not to go to library for issuing purpose.</p>
 
 				</div>
-        
-           
         
         	<div class="cleaner"></div>
         </div><div class="content_box_bottom"></div>
