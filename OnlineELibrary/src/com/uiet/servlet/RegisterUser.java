@@ -2,9 +2,8 @@ package com.uiet.servlet;
 import java.sql.*;
 public class RegisterUser {
 static int status=0;
-//int accountno=1;
+
 public static int register(String username,String password,String repassword,double phone,String adderess,String syd){
-	//public static int register(String email,String password,String gender,String country,String name){
 
 	Connection con=GetCon.getCon();
 	PreparedStatement ps;
@@ -21,6 +20,7 @@ public static int register(String username,String password,String repassword,dou
 			
 		status=ps.executeUpdate();
 		System.out.println(status);
+		
 	} catch (SQLException e) {
 		
 		e.printStackTrace();
