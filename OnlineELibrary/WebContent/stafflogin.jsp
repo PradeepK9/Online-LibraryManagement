@@ -178,7 +178,7 @@
 						</table>
 
 						<div class="section_w250 float_l">
-							<h3>Admin login:</h3>
+							<h3>Staff login:</h3>
 							<p>Admin is the one who administers the system by adding or
 								removing e-books into and from the system respectively..</p>
 						</div>
