@@ -140,7 +140,6 @@
 								}
 							%>
 
-
 							<tr>
 								<td>BOOK ID:</td>
 								<td><input type="text" name="bookid" /></td>
@@ -156,19 +155,18 @@
 						import="java.io.*"%> <%@ page
 						import="javax.servlet.*"%> <%@ page
 						import="com.uiet.servlet.*"%> <%--</table>--%>
-					<h2>JAVA</h2>
 
+					<h3>Delete Book</h3>
 					<div class="section_w250 float_l">
-						<h3>Admin login:</h3>
-						<p>Admin is the one who administers the system by adding or
-							removing e-books into and from the system respectively..</p>
+						<h3>Enter the book id :</h3>
+						<p>When you click on submit button with book id, the book from
+							databse will be deleted.....</p>
 
 					</div>
 
 					</form>
 
 				</td>
-
 
 				<div class="cleaner"></div>
 			</div>
