@@ -129,14 +129,6 @@
 			<div class="sidebar_box">
 
 
-				<%--  <h2>AskQuestions</h2>
-            
-            <form action="www.javatpoint.com" method="get">
-            <label>Please enter your email address to ask or post java Question Answer.</label>
-            <input type="text" value="" name="username" size="10" id="input_field" title="usernmae" />
-            <input type="submit" name="login" value="Ask" alt="login" id="submit_btn" title="Login" />
-            </form>--%>
-
 				<div class="cleaner"></div>
 
 			</div>
@@ -210,15 +202,7 @@
  %> <%@ page import="java.sql.*"%> <%@ page
 						import="java.io.*"%> <%@ page
 						import="javax.servlet.*"%> <%@ page
-						import="com.uiet.servlet.*"%> <%-- 	
-             <h2>JAVA</h2>
-            
-            <div class="section_w250 float_l">
-				<h3>Core Java</h3>            
-				<p>oops is a concept of core java so. javatpoint.com ,is realy a very good website we must visit,on this web site,to know java in defth.</p>
-           </div>
-           --%>
-
+						import="com.uiet.servlet.*"%> 
 					</form>
 
 				</td>
