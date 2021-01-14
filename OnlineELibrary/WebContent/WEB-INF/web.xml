@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>dbinitializer</servlet-name>
+		<servlet-class>com.uiet.servlet.DBIntializer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dbinitializer</servlet-name>
+		<url-pattern>/dbinitializer</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>details</servlet-name>
+		<servlet-class>com.uiet.servlet.Details</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>details</servlet-name>
+		<url-pattern>/Details</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CreateServlet</servlet-name>
+		<servlet-class>com.uiet.servlet.CreateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateServlet</servlet-name>
+		<url-pattern>/CreateServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>registeruser</servlet-name>
+		<servlet-class>com.uiet.servlet.RegisterUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registeruser</servlet-name>
+		<url-pattern>/registerUser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterUser1</servlet-name>
+		<servlet-class>com.uiet.servlet.RegisterUser1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterUser1</servlet-name>
+		<url-pattern>/RegisterUser1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterUser2</servlet-name>
+		<servlet-class>com.uiet.servlet.RegisterUser2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterUser2</servlet-name>
+		<url-pattern>/RegisterUser2</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>verifyLogin1</servlet-name>
+		<servlet-class>com.uiet.servlet.verifyLogin1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>verifyLogin1</servlet-name>
+		<url-pattern>/verifyLogin1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>verifyLogin2</servlet-name>
+		<servlet-class>com.uiet.servlet.verifyLogin2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>verifyLogin2</servlet-name>
+		<url-pattern>/verifyLogin2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>verifyLogin3</servlet-name>
+		<servlet-class>com.uiet.servlet.verifyLogin3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>verifyLogin3</servlet-name>
+		<url-pattern>/verifyLogin3</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetCon</servlet-name>
+		<servlet-class>com.uiet.servlet.GetCon</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetCon</servlet-name>
+		<url-pattern>/getCon</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>VerifyLoginforCustAdmin</servlet-name>
+		<servlet-class>com.uiet.servlet.verifyLoginforcustadmin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VerifyLoginforCustAdmin</servlet-name>
+		<url-pattern>/VerifyLoginforCustAdmin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>VerifyLoginforCustAdmin1</servlet-name>
+		<servlet-class>com.uiet.servlet.VerifyLoginforcustadmin1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VerifyLoginforCustAdmin1</servlet-name>
+		<url-pattern>/VerifyLoginforCustAdmin1</url-pattern>
+	</servlet-mapping>
+
+
+	<listener>
+		<listener-class>com.uiet.servlet.MyListener</listener-class>
+	</listener>
+
+</web-app>
