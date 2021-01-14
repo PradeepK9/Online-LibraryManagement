@@ -11,7 +11,6 @@ public class MyListener implements ServletContextListener{
       try{
 		con=GetCon.getCon();
 		PreparedStatement ps1=con.prepareStatement("Select * from NEWMEMBER");
-		
 
       try{
 		status=ps1.executeUpdate();
@@ -26,7 +25,6 @@ public class MyListener implements ServletContextListener{
        if(status==0)
 		{System.out.println("your table name already exist"+status);}
 		
-         
        else if(status==2) 
 		
                {System.out.println("else if part table does not exist new table has created"+status);
